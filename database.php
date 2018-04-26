@@ -34,11 +34,8 @@
 	//----------------------------------------------------------------------------
 		//função para remover produtos do banco de dados
 		public function removeFuncionario($id) {
-			// deletar da tabela produtos onde o ID da tabela for igual ao ID da variável
-			$query = "delete from funcionarios where id = {$id}";
-
-			//retornando a conexão e a variável
-			return mysqli_query($this->database->getConexao(), $query);
+			$sql = "DELETE from funcionarios where IDFuncionario = {$id}";
+			mysqli_query($this->database->getConexao(), $sql);
 		}
 
 	//----------------------------------------------------------------------------

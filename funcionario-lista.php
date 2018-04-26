@@ -32,7 +32,7 @@
                     </form>
 
                         <form action = "funcionario-delete-confirma.php" method="post">
-                            <input type="hidden" name="IDFuncionario"  value="<?= $funcionario['IDFuncionario'] ?>"/>
+                            <input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>"/>
                             <button class="btn btn-danger">Remover</button>
                         </form>
                     </td>
