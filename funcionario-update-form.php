@@ -35,7 +35,7 @@
 	  </div>
   </div>
 
-    <button type="submit" class="btn btn-primary">Atualizar</button>
-   <button type="reset" class="btn btn-danger">Apagar</button>
+    <button type="submit" class="btn btn-warning">Atualizar</button>
+   <button type="reset" class="btn btn-warning">Apagar</button>
 
 </form>

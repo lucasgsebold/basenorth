@@ -25,7 +25,7 @@
 
 	//----------------------------------------------------------------------------
 		public function buscaFuncionario($id) {
-			$sql = "select IDFuncionario, Sobrenome, Nome, Titulo from funcionarios where IDFuncionario = {$id}";
+			$sql = "SELECT IDFuncionario, Sobrenome, Nome, Titulo FROM funcionarios WHERE IDFuncionario = {$id}";
 			$resultado = mysqli_query($this->database->getConexao(), $sql);
 			return mysqli_fetch_assoc($resultado);
 		}
@@ -34,7 +34,7 @@
 	//----------------------------------------------------------------------------
 		//função para remover produtos do banco de dados
 		public function removeFuncionario($id) {
-			$sql = "DELETE from funcionarios where IDFuncionario = {$id}";
+			$sql = "DELETE * from funcionarios where IDFuncionario = {$id}";
 			mysqli_query($this->database->getConexao(), $sql);
 		}
 

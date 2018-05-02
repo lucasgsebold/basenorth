@@ -16,7 +16,7 @@
        ?>
       <script>
            alert("A região foi cadastrada com Sucesso!");
-           window.location.href = 'index.php';
+           window.location.href = 'funcionario-lista.php';
        </script>
 
        <?php

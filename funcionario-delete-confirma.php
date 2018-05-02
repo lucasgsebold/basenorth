@@ -11,8 +11,11 @@
         ?>
         <form action="funcionario-delete.php" method="post">
         	<input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>">
-        	você deseja realmente excluir esse funcionario?<br>
-        	nome:<?=$funcionario['Nome']?>
-
-        	<input type="submit" name="confirmar" value="CONFIRMAR">
+        	<p>Você deseja realmente excluir esse funcionário?</p>
+          <ul>
+            <li>Nome: <?=$funcionario['Nome']?></li>
+            <li>Sobrenome: <?=$funcionario['Sobrenome']?></li>
+            <li>Titulo: <?=$funcionario['Titulo']?></li>
+          </ul>
+          <button class="btn btn-warning">Confirmar</button>
         </form>
