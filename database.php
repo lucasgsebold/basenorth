@@ -44,6 +44,28 @@
 
 			$sql = "INSERT INTO funcionarios(IDFuncionario,Sobrenome,Nome,Titulo,TituloCortesia,DataNac,DataAdmissao,Endereco,Cidade,Regiao,Cep,Pais,TelefoneResidencial,Extensao,Notas) VALUES ('$idfuncionario','$sobrenome','$nome','$titulo','$titulocortesia','$datanascimento','$dataadmissao','$endereco','$cidade','$regiao','$cep','$pais','$telefone','$extensao','$notas')";
 			return mysqli_query($this->database->getConexao(),$sql);
+		}	
+
+		public function listaRegioes() {
+			$regioes = array();
+			$sql = "SELECT * FROM regiao";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($regiao = mysqli_fetch_assoc($resultado)) {
+				array_push($regioes, $regiao);
+			}	
+			return $regioes;
+		}
+
+		public function listaTerritorios() {
+			$territorios = array();
+			$sql = "SELECT * FROM territorios";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($territorio = mysqli_fetch_assoc($resultado)) {
+				array_push($territorios, $territorio);
+			}	
+			return $territorios;
 		}
 	}
 ?>

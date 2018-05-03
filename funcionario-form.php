@@ -1,5 +1,11 @@
+<?php
+    include_once("cabecalho.php");
+    include_once("conexao.php");
+    include_once("database.php");
 
-<?php include_once("cabecalho.php");?>
+    $conexao = new BancoDeDados("localhost","root","","northwind");
+    $funcionariosDto = new FuncionariosDto($conexao);
+?>
 
 
 
@@ -79,7 +85,6 @@
     <input name="notas" type="text" class="form-control" id="notas" >
     </div>
   </div>
-
 
    <button type="submit" class="my-4 mx-3 btn btn-warning">Cadastrar</button>
    <button type="reset" class="my-4 mx-0 btn btn-warning">Limpar</button>

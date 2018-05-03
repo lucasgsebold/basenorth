@@ -34,30 +34,7 @@
 					<ul class="navbar-nav mr-auto">
 
 					<!--Menu Items-->
-
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Categorias</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="categoria-lista.php">Listar</a>
-							</div>
-            </li>
-            <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Clientes</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="clientes-lista.php">Listar</a>
-							</div>
-            </li>
-
-            <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Fornecedores</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="fornecedores-lista.php">Listar</a>
-							</div>
-            </li>
-
+		 
             <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Funcionários</a>
 							<div class="dropdown-menu">
@@ -67,25 +44,8 @@
             </li>
 
             <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Ordens</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="ordens-lista.php">Listar</a>
-							</div>
-            </li>
-
-            <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Produtos</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="produtos-lista.php">Listar</a>
-							</div>
-            </li>
-
-            <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Região</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
 								<a class="dropdown-item" href="regiao-lista.php">Listar</a>
 							</div>
             </li>
@@ -93,18 +53,18 @@
             <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Territórios</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="">Listar</a>
+								<a class="dropdown-item" href="territorios-lista.php">Listar</a>
 							</div>
             </li>
 
-            <li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Transportadoras</a>
+			<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Funcionario-Território</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="">Cadastrar</a>
-								<a class="dropdown-item" href="">Listar</a>
+								<a class="dropdown-item" href="	-lista.php">Listar</a>
 							</div>
             </li>
+
           </ul>
 					<!--Campo de Busca-->
 					<form action="" class="form-inline">
