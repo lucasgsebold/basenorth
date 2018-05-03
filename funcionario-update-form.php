@@ -72,14 +72,14 @@
     </div>
     <div class="form-group col-md-4">
       <label for="telefone">Atualizar Telefone</label>
-      <input name="telefone" type="text" class="form-control" id="telefone" value="<?=$funcionario['TelefoneResidencial']?>"/>
+      <input name="telefone" type="tel" class="form-control" id="telefone" value="<?=$funcionario['TelefoneResidencial']?>"/>
     </div>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="extensao">Atualizar Extensão</label>
-      <input name="Extensao" type="text" class="form-control" id="extensao"  value="<?=$funcionario['Extensao']?>"/>
+      <input name="extensao" type="text" class="form-control" id="extensao"  value="<?=$funcionario['Extensao']?>" maxlength="4"/>
     </div>
     <div class="form-group col-md-4">
       <label for="notas">Atualizar Notas</label>

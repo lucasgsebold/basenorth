@@ -72,7 +72,7 @@
     </div>
     <div class="form-group mx-3 my-4 col-md-3">
     <label for="extensao">Extensão</label>
-    <input name="extensao" type="number" class="form-control" id="extensao" >
+    <input name="extensao" type="text" class="form-control" id="extensao" maxlength="4">
     </div>
     <div class="form-group mx-3 my-4 col-md-3">
     <label for="notas">Notas</label>

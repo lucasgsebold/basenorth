@@ -18,8 +18,8 @@
 		}
 
 
-		public function alteraFuncionario($id, $nome, $sobrenome, $titulo) {
-			$sql = "UPDATE funcionarios SET Nome ='{$nome}', Sobrenome ='{$sobrenome}', Titulo='{$titulo}' WHERE IDFuncionario = {$id}";
+		public function alteraFuncionario($id, $nome, $sobrenome, $titulo,$titulocortesia,$datanascimento,$dataadmissao,$endereco,$cidade,$regiao,$cep,$pais,$telefone,$extensao,$notas) {
+			$sql = "UPDATE funcionarios SET Nome ='{$nome}', Sobrenome ='{$sobrenome}', Titulo='{$titulo}', TituloCortesia='{$titulocortesia}', DataNac='{$datanascimento}',DataAdmissao='{$dataadmissao}',Endereco='{$endereco}',Cidade='{$cidade}',Regiao='{$regiao}',Cep='{$cep}',Pais='{$pais}',TelefoneResidencial='{$telefone}', Extensao='{$extensao}',Notas='$notas' WHERE IDFuncionario = {$id}";
 			return mysqli_query($this->database->getConexao(),$sql);
 		}
 
@@ -34,7 +34,7 @@
 	//----------------------------------------------------------------------------
 		//função para remover produtos do banco de dados
 		public function removeFuncionario($id) {
-			$sql = "DELETE  from funcionarios where IDFuncionario = {$id}";
+			$sql = "DELETE FROM `funcionarios` WHERE `funcionarios`.`IDFuncionario` = {$id}";
 			mysqli_query($this->database->getConexao(), $sql);
 		}
 
