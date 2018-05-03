@@ -44,7 +44,7 @@
 
 			$sql = "INSERT INTO funcionarios(IDFuncionario,Sobrenome,Nome,Titulo,TituloCortesia,DataNac,DataAdmissao,Endereco,Cidade,Regiao,Cep,Pais,TelefoneResidencial,Extensao,Notas) VALUES ('$idfuncionario','$sobrenome','$nome','$titulo','$titulocortesia','$datanascimento','$dataadmissao','$endereco','$cidade','$regiao','$cep','$pais','$telefone','$extensao','$notas')";
 			return mysqli_query($this->database->getConexao(),$sql);
-		}	
+		}
 
 		public function listaRegioes() {
 			$regioes = array();
@@ -53,7 +53,7 @@
 
 			while ($regiao = mysqli_fetch_assoc($resultado)) {
 				array_push($regioes, $regiao);
-			}	
+			}
 			return $regioes;
 		}
 
@@ -64,8 +64,53 @@
 
 			while ($territorio = mysqli_fetch_assoc($resultado)) {
 				array_push($territorios, $territorio);
-			}	
+			}
 			return $territorios;
 		}
+
+		public function listaFuncionarioTerritorios() {
+			$funcionarioterritorios = array();
+			$sql = "SELECT * FROM funcionarios_territorios tb INNER JOIN territorios t ON tb.IDTerritorio = t.IDTerritorio INNER JOIN funcionarios f ON tb.IDFuncionario = f.IDFuncionario ";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($funcionarioterritorio = mysqli_fetch_assoc($resultado)) {
+				array_push($funcionarioterritorios, $funcionarioterritorio);
+			}
+			return $funcionarioterritorios;
+		}
+
+		public function listaTerritorios2($id) {
+			$territorios = array();
+			$sql = "SELECT * FROM territorios where IDTerritorio = {$id}";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($territorio = mysqli_fetch_assoc($resultado)) {
+				array_push($territorios, $territorio);
+			}
+			return $territorios;
+		}
+
+		public function listaFuncionarios2($idf) {
+			$funcionarios = array();
+			$sql = "SELECT * FROM funcionarios where IDFuncionario = {$idf}";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($funcionario = mysqli_fetch_assoc($resultado)) {
+				array_push($funcionarios, $funcionario);
+			}
+			return $funcionarios;
+		}
+
+		public function listaRegioes2($idr) {
+			$regioes = array();
+			$sql = "SELECT * FROM regiao where IDRegiao = {$idr}";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+
+			while ($regiao = mysqli_fetch_assoc($resultado)) {
+				array_push($regioes, $regiao);
+			}
+			return $regioes;
+		}
+
 	}
 ?>

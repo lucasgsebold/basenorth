@@ -20,19 +20,7 @@
             <tr>
                 <td><?=$regiao["IDRegiao"]?></td>
                 <td><?=$regiao["DescricaoRegiao"]?></td>
-
-                <td>
-                  <form action = "regiao-update-form.php" method="post">
-                      <input type="hidden" name="IDRegiao"  value="<?=$regiao['IDRegiao']?>"/>
-                      <button class="btn btn-warning">Update</button>
-                  </form>
-
-                  <form action = "regiao-delete-confirma.php" method="post">
-                      <input type="hidden" name="IDRegiao" value="<?=$regiao['IDRegiao']?>"/>
-                      <button class="btn btn-warning">Remover</button>
-                  </form>
-                </td>
-              </tr>
+            </tr>
         <?php
             endforeach
         ?>

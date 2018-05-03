@@ -26,7 +26,7 @@
      if($adicionar) {
        ?>
       <script>
-           alert("A região foi cadastrada com Sucesso!");
+           alert("O funcionario foi cadastrado com Sucesso!");
            window.location.href = 'funcionario-lista.php';
        </script>
 
@@ -34,7 +34,7 @@
        } else {
        ?>
        <script>
-           alert("Produto não cadastrado!");
+           alert("Funcionario não cadastrado!");
            window.location.href = 'funcionario-form.php';
        </script>
 
