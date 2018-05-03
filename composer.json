@@ -1,0 +1,15 @@
+{
+    "name": "42165/basenorth",
+    "description": "composer12",
+    "type": "project",
+    "require": {
+        "twbs/bootstrap": "^4.1"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Lucas",
+            "email": "lucasgsebold1@gmail.com"
+        }
+    ]
+}
