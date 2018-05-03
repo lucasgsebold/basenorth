@@ -23,6 +23,7 @@
             <td>Pais</td>
             <td>Telefone</td>
             <td>Foto</td>
+            <td>Ações</td>
         </tr>
         <?php
             $funcionarios = $funcionariosDto->listaFuncionarios();

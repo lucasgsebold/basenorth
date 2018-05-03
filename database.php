@@ -25,7 +25,7 @@
 
 	//----------------------------------------------------------------------------
 		public function buscaFuncionario($id) {
-			$sql = "SELECT IDFuncionario, Sobrenome, Nome, Titulo FROM funcionarios WHERE IDFuncionario = {$id}";
+			$sql = "SELECT * FROM funcionarios WHERE IDFuncionario = {$id}";
 			$resultado = mysqli_query($this->database->getConexao(), $sql);
 			return mysqli_fetch_assoc($resultado);
 		}
@@ -34,15 +34,15 @@
 	//----------------------------------------------------------------------------
 		//função para remover produtos do banco de dados
 		public function removeFuncionario($id) {
-			$sql = "DELETE * from funcionarios where IDFuncionario = {$id}";
+			$sql = "DELETE  from funcionarios where IDFuncionario = {$id}";
 			mysqli_query($this->database->getConexao(), $sql);
 		}
 
 	//----------------------------------------------------------------------------
 		//função para inserir produtos no banco de dados
-		public function insereFuncionario($idfuncionario, $sobrenome, $nome, $titulo){
+		public function insereFuncionario($idfuncionario, $sobrenome, $nome, $titulo, $titulocortesia, $datanascimento, $dataadmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefone, $extensao,$notas){
 
-			$sql = "INSERT INTO funcionarios(IDFuncionario,Sobrenome,Nome,Titulo) VALUES ('$idfuncionario','$sobrenome','$nome','$titulo')";
+			$sql = "INSERT INTO funcionarios(IDFuncionario,Sobrenome,Nome,Titulo,TituloCortesia,DataNac,DataAdmissao,Endereco,Cidade,Regiao,Cep,Pais,TelefoneResidencial,Extensao,Notas) VALUES ('$idfuncionario','$sobrenome','$nome','$titulo','$titulocortesia','$datanascimento','$dataadmissao','$endereco','$cidade','$regiao','$cep','$pais','$telefone','$extensao','$notas')";
 			return mysqli_query($this->database->getConexao(),$sql);
 		}
 	}
