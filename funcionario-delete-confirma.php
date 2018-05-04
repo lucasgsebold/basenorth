@@ -9,6 +9,7 @@
         $funcionario = $funcionariosDto->buscaFuncionario($id);
 
         ?>
+        <div class="container">
         <form action="funcionario-delete.php" method="post">
         	<input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>">
         	<p>Você deseja realmente excluir esse funcionário?</p>

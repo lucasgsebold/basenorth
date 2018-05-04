@@ -11,7 +11,7 @@
 
  ?>
 
-
+<div class="container">
 <h1 class="my-4 ">Atualizar Funcionário</h1>
 
 <form method="post" action="funcionario-update.php">

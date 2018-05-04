@@ -6,7 +6,7 @@
     $conexao = new BancoDeDados("localhost","root","","northwind");
     $funcionariosDto = new FuncionariosDto($conexao);
 ?>
-
+<div class="container">
     <table class="table table-striped table-bordered">
         <tr>
             <td>ID Região</td>

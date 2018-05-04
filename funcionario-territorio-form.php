@@ -7,7 +7,7 @@
     $funcionariosDto = new FuncionariosDto($conexao);
 ?>
 
-
+<div class="container">
 
 <h1 class="my-4 ">Cadastrar Funcionario e Território</h1>
 

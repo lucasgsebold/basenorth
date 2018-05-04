@@ -8,7 +8,7 @@
 ?>
 
 
-
+<div class="container">
 <h1 class="my-4 ">Cadastrar</h1>
 
 <form method="get" action="funcionario-add.php">

@@ -11,6 +11,7 @@
         $funcionariot = $funcionariosDto->buscaFuncionarioTerritorio($idf,$idt);
         $funcionario = $funcionariosDto->buscaFuncionario($id);
         ?>
+        <div class="container">
         <form action="ft-delete.php" method="post">
         	<input type="hidden" name="IDFuncionario" value="<?=$funcionariot['IDFuncionario']?>">
           <input type="hidden" name="IDTerritorio" value="<?=$funcionariot['IDTerritorio']?>">
