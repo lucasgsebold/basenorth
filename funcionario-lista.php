@@ -49,12 +49,12 @@
                 <td>
                   <form action = "funcionario-update-form.php" method="post">
                       <input type="hidden" name="IDFuncionario"  value="<?=$funcionario['IDFuncionario']?>"/>
-                      <button class="btn btn-warning">Atualizar</button>
+                      <button class="btn btn-warning mx-1 my-1">Atualizar</button>
                   </form>
 
                   <form action = "funcionario-delete-confirma.php" method="post">
                       <input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>"/>
-                      <button class="btn btn-warning">Remover</button>
+                      <button class="btn btn-warning mx-1 my-1">Remover</button>
                   </form>
                 </td>
               </tr>
