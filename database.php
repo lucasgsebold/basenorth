@@ -112,5 +112,46 @@
 			return $regioes;
 		}
 
+		public function buscaRegiao1() {
+			$sql = "SELECT DescricaoRegiao FROM regiao Where IDRegiao = 1";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+
+		public function buscaRegiao2() {
+			$sql = "SELECT DescricaoRegiao FROM regiao Where IDRegiao = 2";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+
+		public function buscaRegiao3() {
+			$sql = "SELECT DescricaoRegiao FROM regiao Where IDRegiao = 3";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+
+		public function buscaRegiao4() {
+			$sql = "SELECT DescricaoRegiao FROM regiao Where IDRegiao = 4";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+
+		public function insereFuncionarioTerritorio($idfuncionario, $idterritorio){
+
+			$sql = "INSERT INTO funcionarios_territorios(IDFuncionario,IDTerritorio) VALUES ('$idfuncionario','$idterritorio')";
+			return mysqli_query($this->database->getConexao(),$sql);
+		}
+
+		public function buscaFuncionarioTerritorio($idf, $idt) {
+			$sql = "SELECT * FROM funcionarios_territorios Where IDFuncionario = {$idf} and IDTerritorio = {$idt}";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+
+		public function removeFuncionarioTerritorio($idf,$idt) {
+			$sql = "DELETE FROM funcionarios_territorios WHERE IDFuncionario = {$idf} and IDTerritorio = {$idt}";
+			mysqli_query($this->database->getConexao(), $sql);
+		}
+
 	}
 ?>

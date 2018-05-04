@@ -49,7 +49,7 @@
                 <td>
                   <form action = "funcionario-update-form.php" method="post">
                       <input type="hidden" name="IDFuncionario"  value="<?=$funcionario['IDFuncionario']?>"/>
-                      <button class="btn btn-warning">Update</button>
+                      <button class="btn btn-warning">Atualizar</button>
                   </form>
 
                   <form action = "funcionario-delete-confirma.php" method="post">

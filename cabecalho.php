@@ -26,7 +26,7 @@
 	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark  ">
 
 
-			<a href="index.php" class="navbar-brand bg-warning mb-0"><h4>&nbsp; Base North Wind&nbsp;</h4></a>
+			<a href="index.php" class="navbar-brand bg-warning mb-0"><h4>&nbsp; Banco Norte&nbsp;</h4></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsite">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -60,13 +60,12 @@
 			<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Funcionario-Território</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Cadastrar</a>
+								<a class="dropdown-item" href="funcionario-territorio-form.php">Cadastrar</a>
 								<a class="dropdown-item" href="funcionario-territorio-lista.php">Listar</a>
 							</div>
             </li>
 
           </ul>
-					<!--Campo de Busca-->
 					<form action="" class="form-inline">
 						<input placeholder="Buscar..." type="search" class="form-control ml-5 mr-1">
 						<button class="btn btn-warning" type="submit">OK</button>

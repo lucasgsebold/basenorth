@@ -57,10 +57,22 @@
     <input name="cidade" type="text" class="form-control" id="cidade" >
     </div>
   </div>
+
   <div class="form-row">
     <div class="form-group mx-3  my-4 col-md-3">
     <label for"regiao">Região</label>
-    <input name="regiao" type="text" class="form-control" id="regiao" >
+    <select name="regiao" type="text" class="form-control" id="regiao">
+    <?php
+      $regiao1=$funcionariosDto->buscaRegiao1();
+      $regiao2=$funcionariosDto->buscaRegiao2();
+      $regiao3=$funcionariosDto->buscaRegiao3();
+      $regiao4=$funcionariosDto->buscaRegiao4();
+    ?>
+    <option name="regiao"><?=$regiao1['DescricaoRegiao']?></option>
+    <option name="regiao"><?=$regiao2['DescricaoRegiao']?></option>
+    <option name="regiao"><?=$regiao3['DescricaoRegiao']?></option>
+    <option name="regiao"><?=$regiao4['DescricaoRegiao']?></option>
+    </select>
     </div>
     <div class="form-group mx-3 my-4 col-md-3">
     <label for="cep">CEP</label>
@@ -71,6 +83,7 @@
     <input name="pais" type="text" class="form-control" id="pais" >
     </div>
   </div>
+
   <div class="form-row">
     <div class="form-group mx-3  my-4 col-md-3">
     <label for"telefone">Telefone</label>

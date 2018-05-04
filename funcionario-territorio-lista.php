@@ -13,6 +13,7 @@
             <td>Nome Funcionário</td>
             <td>ID Território</td>
             <td>Nome Território</td>
+            <td>Açoes</td>
         </tr>
         <?php
             $funcionarioterritorios = $funcionariosDto->listaFuncionarioTerritorios();
@@ -44,13 +45,9 @@
                   endforeach
               ?>
                 <td>
-                  <form action = "funcionarioterritorio-update-form.php" method="post">
-                      <input type="hidden" name="IDTerritorio"  value="<?=$funcionarioterritorio['IDTerritorio']?>"/>
-                      <button class="btn btn-warning">Update</button>
-                  </form>
-
-                  <form action = "funcionarioterritorio-delete-confirma.php" method="post">
+                  <form action = "ft-delete-confirma.php" method="post">
                       <input type="hidden" name="IDTerritorio" value="<?=$funcionarioterritorio['IDTerritorio']?>"/>
+                      <input type="hidden" name="IDFuncionario"  value="<?=$funcionarioterritorio['IDFuncionario']?>"/>
                       <button class="btn btn-warning">Remover</button>
                   </form>
                 </td>

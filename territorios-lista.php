@@ -33,18 +33,6 @@
           <?php
             endforeach
           ?>
-
-                <td>
-                  <form action = "territorio-update-form.php" method="post">
-                      <input type="hidden" name="IDTerritorio"  value="<?=$territorio['IDTerritorio']?>"/>
-                      <button class="btn btn-warning">Update</button>
-                  </form>
-
-                  <form action = "territorio-delete-confirma.php" method="post">
-                      <input type="hidden" name="IDTerritorio" value="<?=$territorio['IDTerritorio']?>"/>
-                      <button class="btn btn-warning">Remover</button>
-                  </form>
-                </td>
               </tr>
         <?php
             endforeach
