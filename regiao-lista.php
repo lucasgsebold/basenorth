@@ -11,6 +11,7 @@
         <tr>
             <td>ID Região</td>
             <td>Descrição</td>
+            <td>Ação</td>
         </tr>
         <?php
             $regioes = $funcionariosDto->listaRegioes();
@@ -20,6 +21,13 @@
             <tr>
                 <td><?=$regiao["IDRegiao"]?></td>
                 <td><?=$regiao["DescricaoRegiao"]?></td>
+
+              <td>
+                <form action = "regiao-delete-confirma.php" method="post">
+                    <input type="hidden" name="IDRegiao" value="<?=$regiao['IDRegiao']?>"/>
+                    <button class="btn btn-warning mx-1 my-1">Remover</button>
+                </form>
+              </td>
             </tr>
         <?php
             endforeach

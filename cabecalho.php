@@ -46,6 +46,7 @@
             <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Região</a>
 							<div class="dropdown-menu">
+                <a class="dropdown-item" href="regiao-form.php">Cadastrar</a>
 								<a class="dropdown-item" href="regiao-lista.php">Listar</a>
 							</div>
             </li>

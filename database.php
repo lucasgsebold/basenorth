@@ -153,5 +153,20 @@
 			mysqli_query($this->database->getConexao(), $sql);
 		}
 
+		public function insereRegiao($idregiao,$nome){
+			$sql = "INSERT INTO regiao(IDRegiao,DescricaoRegiao) VALUES ('$idregiao','$nome')";
+			return mysqli_query($this->database->getConexao(),$sql);
+		}
+
+		public function buscaRegiao($id) {
+			$sql = "SELECT * FROM regiao WHERE IDRegiao = {$id}";
+			$resultado = mysqli_query($this->database->getConexao(), $sql);
+			return mysqli_fetch_assoc($resultado);
+		}
+		public function removeRegiao($id) {
+			$sql = "DELETE FROM `regiao` WHERE `regiao`.`IDRegiao` = {$id}";
+			mysqli_query($this->database->getConexao(), $sql);
+		}
+
 	}
 ?>
